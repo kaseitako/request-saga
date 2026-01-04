@@ -1,0 +1,21 @@
+# デフォルト: すべてのテキストファイルはLF
+* text=auto eol=lf
+
+# Java sources
+*.java          text diff=java
+*.kt            text diff=kotlin
+*.groovy        text diff=java
+*.scala         text diff=java
+*.gradle        text diff=java
+*.gradle.kts    text diff=kotlin
+
+# Binary
+*.class         binary
+*.dll           binary
+*.ear           binary
+*.jar           binary
+*.war           binary
+*.jks           binary
+
+# Windows files
+*.bat           text eol=crlf
