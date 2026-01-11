@@ -1,5 +1,8 @@
 # Copilot Coding Agent Onboarding Guide
 
+## 使用言語
+日本語でレビューしてください。
+
 ## High-Level Repository Overview
 
 - **Repository Summary**:  
