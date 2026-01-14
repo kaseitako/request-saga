@@ -30,12 +30,5 @@ spotless {
     java {
         googleJavaFormat()
         indentWithSpaces(4)
-        removeUnusedImports()
-        trimTrailingWhitespace()
-        endWithNewline()
     }
-}
-
-tasks.named("build") {
-    dependsOn("spotlessApply")
 }
