@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.diffplug.spotless") version "6.25.0"
+    id("com.diffplug.spotless") version "8.1.0"
 }
 
 group = "dev.kaseitako"
@@ -29,6 +29,7 @@ tasks.test {
 spotless {
     java {
         googleJavaFormat()
+        indentWithSpaces(4)
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()
