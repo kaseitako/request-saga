@@ -28,7 +28,13 @@ tasks.test {
 
 spotless {
     java {
-        googleJavaFormat()
-        indentWithSpaces(4)
+        googleJavaFormat().aosp() // インデントをスペース4つにしたいのでAOSP(Android Open Source Project)形式にする
+        removeUnusedImports()
+        trimTrailingWhitespace()
+        endWithNewline()
     }
+}
+
+tasks.named("build") {
+    dependsOn("spotlessApply")
 }
