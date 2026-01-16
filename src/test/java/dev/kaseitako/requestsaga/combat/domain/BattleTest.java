@@ -106,13 +106,10 @@ class BattleTest {
 
         assertFalse(player.isDead(), "プレイヤーは生存しているべき");
         assertFalse(enemy.isDead(), "敵は生存しているべき");
-        assertEquals(
-                20,
-                result.battleLog().size(),
-                "バトルログは20エントリ（10ターン x 2アクション）であるべき");
+        assertEquals(10, result.battleLog().size(), "バトルログは10エントリであるべき");
 
         var lastTurn = result.battleLog().get(result.battleLog().size() - 1).turn();
-        assertTrue(lastTurn <= 11, "最終ターンは11以下であるべき");
+        assertEquals(10, lastTurn, "最終ターンは10であるべき");
     }
 
     @Test
