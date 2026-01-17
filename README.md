@@ -27,6 +27,40 @@ devcontainerは自動的にJava環境とGradleをセットアップします。
 
 # テスト実行
 ./gradlew test
+
+# コードフォーマット（手動実行）
+./gradlew spotlessApply
 ```
 
 ビルド時に自動的にSpotlessによるコードフォーマットが適用されます。
+
+## devcontainer の追加ツール
+
+devcontainer環境には以下のツールがプリインストールされています：
+
+### Claude Code
+
+AIアシスタントを使った開発が可能です。
+
+```bash
+# Claude Codeの起動
+claude code
+```
+
+### ccusage
+
+Claude APIの使用状況を確認できます。
+
+```bash
+# 使用状況の確認
+ccusage
+```
+
+### cc-sdd
+
+Claude Code SDKの開発ツールです。
+
+```bash
+# cc-sddの使用
+cc-sdd
+```
